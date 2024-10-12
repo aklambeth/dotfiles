@@ -37,22 +37,6 @@ if [ -d "$HOME/Code/Flutter/.sdk/flutter/bin" ]; then
     PATH="$PATH:$HOME/Code/Flutter/.sdk/flutter/bin"
 fi
 
-# Append Flutter SDK to PATH if it exists
-if [ -d "$HOME/Code/Flutter/.sdk/flutter/bin" ]; then
-    PATH="$PATH:$HOME/Code/Flutter/.sdk/flutter/bin"
-fi
-
-# Append Android SDK Home if it exists
-if [ -d "$HOME/Android/Sdk" ]; then
-    ANDROID_HOME="$HOME/Android/Sdk"
-fi
-
-# Append Android SDK Home to PATH if it exists
-if [ -d "$ANDROID_HOME/cmdline-tools" ]; then
-    PATH="$PATH:$ANDROID_HOME/cmdline-tools/bin"
-fi
-
-# Append Python UV Home to PATH if it exists
-if [ -d "$HOME/.cargo/env" ] ; then
-    PATH="$PATH:$HOME/.cargo/env"
+if [ -f "$HOME/.sdk" ]; then
+    . "$HOME/.sdk"
 fi
