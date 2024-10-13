@@ -13,8 +13,8 @@ Make sure to install the following:
 
 2. **Oh My Posh**: A prompt theme engine for any shell. Installation instructions are available here: [Oh My Posh](https://ohmyposh.dev/).
 
-   - **Debian-based Linux**: Install using `[Copy](javascript:copyTextToClipboard(curl -s https://ohmyposh.dev/install.sh | bash)`
-   - **macOS**: Install using Homebrew with `[Copy](javascript:copyTextToClipboard(brew install oh-my-posh)`
+   - **Debian-based Linux**: Install using `curl -s https://ohmyposh.dev/install.sh | bash`
+   - **macOS**: Install using Homebrew with `brew install oh-my-posh`
 
 3. **Nerd Fonts**: Required for correct prompt rendering. Download a Nerd Font of your choice from [Nerd Fonts](https://www.nerdfonts.com/).
 
