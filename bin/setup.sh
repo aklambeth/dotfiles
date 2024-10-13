@@ -6,7 +6,7 @@ to_append='if [ -f "$DOTFILES/bash/bashrc" ]; then
 fi'
 
 # Check if the code block already exists in .bashrc
-if ! grep -q 'if [ -f "$DOTFILES/bash/bashrc" ]; then' ~/.bashrc; then
+if ! grep -qxF "$to_append" ~/.bashrc; then
      echo -e "\n$to_append" >> ~/.bashrc
      echo "Updated .bashrc"
 else
