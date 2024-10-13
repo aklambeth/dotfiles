@@ -1,0 +1,4 @@
+.poshthemes/*.omp.json
+.aider.conf.yml
+.env
+.aider*
