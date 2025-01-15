@@ -37,11 +37,19 @@ Make sure to install the following:
        . "$DOTFILES/bash/bashrc"
    fi
    ```
+   ```sh
+   if [ -f "$DOTFILES/zsh/zshrc" ]; then
+       . "$DOTFILES/zsh/zshrc"
+   fi
+   ```
 
    Alternatively, you can automate the setup process by running:
 
    ```sh
-   ~/.dotfiles/bin/setup.sh
+   ~/.dotfiles/bin/bash_setup.sh
+   ```
+   ```sh
+   ~/.dotfiles/bin/zsh_setup.sh
    ```
 
 3. **Merge Custom PATH and Aliases**
@@ -63,6 +71,9 @@ Make sure to install the following:
 
    ```sh
    stow -S bash && stow -S oh-my-posh
+   ```
+   ```sh
+   stow -S zsh && stow -S oh-my-posh
    ```
 
 5. **Restart Your Terminal**

@@ -1,3 +1,6 @@
 [submodule "bash"]
 	path = bash
 	url = https://github.com/aklambeth/dotfiles-bash.git
+[submodule "zsh"]
+	path = zsh
+	url = git@github.com:aklambeth/dotfiles-zsh.git
