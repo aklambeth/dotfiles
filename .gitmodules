@@ -4,3 +4,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = git@github.com:aklambeth/dotfiles-zsh.git
+[submodule "ghostty/.ghostty/shaders/ghostty-cursor-shaders"]
+	path = ghostty/.ghostty/shaders/ghostty-cursor-shaders
+	url = https://github.com/sahaj-b/ghostty-cursor-shaders.git
